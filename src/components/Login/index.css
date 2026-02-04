@@ -1,0 +1,105 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* https://grabient.com/HQBgrAzANKAsAcMT0cAjLAnDNYDsOsATDEUSKWicGWlBMHmtA3kS8AGyYRA?style=linearSwatches&steps=21 */
+
+background: linear-gradient(90deg, #05050a 0.000%, #05050a 4.762%, #07080c calc(4.762% + 1px), #07080c 9.524%, #0a0b0f calc(9.524% + 1px), #0a0b0f 14.286%, #0d0d11 calc(14.286% + 1px), #0d0d11 19.048%, #0f1014 calc(19.048% + 1px), #0f1014 23.810%, #121316 calc(23.810% + 1px), #121316 28.571%, #141519 calc(28.571% + 1px), #141519 33.333%, #17181b calc(33.333% + 1px), #17181b 38.095%, #191a1e calc(38.095% + 1px), #191a1e 42.857%, #1c1d20 calc(42.857% + 1px), #1c1d20 47.619%, #1e1f22 calc(47.619% + 1px), #1e1f22 52.381%, #212225 calc(52.381% + 1px), #212225 57.143%, #232427 calc(57.143% + 1px), #232427 61.905%, #252629 calc(61.905% + 1px), #252629 66.667%, #27282b calc(66.667% + 1px), #27282b 71.429%, #292a2d calc(71.429% + 1px), #292a2d 76.190%, #2b2c2f calc(76.190% + 1px), #2b2c2f 80.952%, #2c2d31 calc(80.952% + 1px), #2c2d31 85.714%, #2e2f33 calc(85.714% + 1px), #2e2f33 90.476%, #2f3034 calc(90.476% + 1px), #2f3034 95.238%, #303135 calc(95.238% + 1px) 100.000%);
+    height: 100vh;
+  }
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 450px;
+    /* https://grabient.com/HQBgrAzANKAsAcMT0cAjLAnDNYDsOsATDEUSKWicGWlBMHmtA3kS8AGybShgVpQIAUIoggA?angle=180&steps=34 */
+
+background: linear-gradient(180deg, #121216 0.000%, #131418 3.030%, #151519 6.061%, #16171b 9.091%, #18191c 12.121%, #191a1e 15.152%, #1b1c1f 18.182%, #1d1e21 21.212%, #1e1f22 24.242%, #202124 27.273%, #212225 30.303%, #232427 33.333%, #242528 36.364%, #26272a 39.394%, #27282b 42.424%, #292a2d 45.455%, #2a2b2e 48.485%, #2c2d30 51.515%, #2d2e31 54.545%, #2f3033 57.576%, #303134 60.606%, #313235 63.636%, #323337 66.667%, #343538 69.697%, #353639 72.727%, #36373a 75.758%, #37383b 78.788%, #38393d 81.818%, #393a3e 84.848%, #3a3b3f 87.879%, #3b3c40 90.909%, #3c3c41 93.939%, #3c3d41 96.970%, #3d3e42 100.000%);
+  }
+  
+  @media screen and (min-width: 992px) {
+    .form-container {
+      width: 450px;
+      flex-shrink: 0;
+      padding: 64px 48px 64px 48px;
+    }
+  }
+  .login-website-logo {
+    width: 90px;
+    padding-bottom: 20px;
+  }
+  @media screen and (min-width: 768px) {
+    .login-website-logo {
+      width: 180px;
+    }
+  }
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .input-label {
+    margin-bottom: 0px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: #ffffff;
+  }
+  
+  .username-input-field {
+    font-size: 15px;
+    height: 40px;
+    border: 1px solid #6366f1;
+    background-color: transparent;
+    color: #ffffff;
+    border-radius: 2px;
+    margin-top: 5px;
+    padding: 8px 16px 8px 16px;
+    outline: none;
+  }
+  
+  .password-input-field {
+    font-size: 14px;
+    height: 40px;
+    border: 1px solid #6366f1;
+    background-color: transparent;
+    color: #ffffff;
+    border-radius: 2px;
+    margin-top: 5px;
+    padding: 8px 16px 8px 16px;
+    outline: none;
+  }
+  
+  .login-button {
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffffff;
+    height: 40px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 2px;
+    background-color: #4f46e5;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .error-message {
+    align-self: start;
+    font-size: 12px;
+    margin-top: 3px;
+    margin-bottom: 0px;
+    font-family: 'Roboto';
+    font-size: 12px;
+    line-height: 16px;
+    color: #ff0b37;
+  }
