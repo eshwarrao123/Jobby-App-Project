@@ -34,9 +34,7 @@ class ProfileCard extends Component {
     if (response.ok === true) {
       const data = await response.json()
       const profileData = {
-        // name: data.profile_details.name,
         profileImageUrl: data.profile_details.profile_image_url,
-        // shortBio: data.profile_details.short_bio,
       }
       this.setState({apiStatus: apiStatusConstants.success, profileData})
     } else {
